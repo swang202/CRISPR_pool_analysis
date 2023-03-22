@@ -6,7 +6,7 @@
 #$ -l h_rt=10:00:00
 #$ -N crispr
 
-cd /gladstone/bioinformatics/projects/GB-SW-1337_Shijie_crispr_2023/data/Alignment_2/20221205_115002/Fastq
+cd /wynton/home/finkbeiner/shijiewang/Parkin_project/data/Alignment_2/20221205_115002/Fastq
 
 #concatenate samples from 4 lanes
 cat Finkbeiner-SW-4039-02_S2_L001_R1_001.fastq.gz Finkbeiner-SW-4039-02_S2_L002_R1_001.fastq.gz Finkbeiner-SW-4039-02_S2_L003_R1_001.fastq.gz Finkbeiner-SW-4039-02_S2_L004_R1_001.fastq.gz > Finkbeiner-SW-4039-02_S2_R1_001.fastq.gz
@@ -24,7 +24,7 @@ fastqc Finkbeiner-SW-4039-02_S2_R1_001.fastq.gz
 
 scriptDir=/gladstone/bioinformatics/projects/GB-SW-1337_Shijie_crispr_2023/scripts
 containerDir=/gladstone/bioinformatics/containers
-dataDir=/gladstone/bioinformatics/projects/GB-SW-1337_Shijie_crispr_2023/data/Alignment_2/20221205_115002/Fastq
+dataDir=/wynton/home/finkbeiner/shijiewang/Parkin_project/data/Alignment_2/20221205_115002/Fastq
 export SINGULARITY_BINDPATH="$containerDir,$scriptDir,$dataDir"
 
 
