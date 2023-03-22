@@ -10,9 +10,10 @@ singularity pull mageck_Feb2023.sif docker://davidliwei/mageck
 
 ##load singularity
 
-scriptDir=/gladstone/bioinformatics/projects/GB-SW-1337_Shijie_crispr_2023/scripts
-containerDir=/gladstone/bioinformatics/containers
-dataDir=/gladstone/bioinformatics/projects/GB-SW-1337_Shijie_crispr_2023/data
+scriptDir=wynton/home/finkbeiner/shijiewang/Parkin_project/scripts
+containerDir=/wynton/home/finkbeiner/shijiewang/containers
+dataDir=/wynton/home/finkbeiner/shijiewang/Parkin_project/data/Alignment_2/20221205_115002/Fastq
+
 export SINGULARITY_BINDPATH="$containerDir,$scriptDir,$dataDir"
 
 
@@ -25,7 +26,7 @@ singularity run $containerDir/mageck_Feb2023.sif
 
 ##run the MAGeCK count command
 #Place two fastq files and one library file into the same directory, and under that directory, run MAGeCK on terminal:
-cd /gladstone/bioinformatics/projects/GB-SW-1337_Shijie_crispr_2023/data/Alignment_2/20221205_115002/Fastq
+cd /wynton/home/finkbeiner/shijiewang/Parkin_project/data/Alignment_2/20221205_115002/Fastq
 
 #concatenate samples from 4 lanes
 cat Finkbeiner-SW-4039-02_S2_L001_R1_001.fastq.gz Finkbeiner-SW-4039-02_S2_L002_R1_001.fastq.gz Finkbeiner-SW-4039-02_S2_L003_R1_001.fastq.gz Finkbeiner-SW-4039-02_S2_L004_R1_001.fastq.gz > Finkbeiner-SW-4039-02_S2_R1_001.fastq.gz
