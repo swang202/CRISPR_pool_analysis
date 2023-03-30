@@ -6,7 +6,7 @@ fastqc Finkbeiner-SW-4039-02_S2_R1_001.fastq.gz
 
 ##pull mageck docker:
   
-#singularity pull mageck_Feb2023.sif docker://davidliwei/mageck
+singularity pull mageck_Feb2023.sif docker://davidliwei/mageck
 #singularity pull mageck_singularity.sif docker://davidliwei/mageck
 
 ##load singularity
