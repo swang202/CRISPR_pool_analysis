@@ -25,7 +25,7 @@ fastqc Finkbeiner-SW-4039-02_S2_R1_001.fastq.gz
 
 ##load singularity
 
-scriptDir=wynton/home/finkbeiner/shijiewang/Parkin_project/scripts
+scriptDir=/wynton/home/finkbeiner/shijiewang/Parkin_project/scripts
 containerDir=/wynton/home/finkbeiner/shijiewang/containers
 dataDir=/wynton/home/finkbeiner/shijiewang/Parkin_project/data/Alignment_2/20221205_115002/Fastq
 export SINGULARITY_BINDPATH="$containerDir,$scriptDir,$dataDir"
